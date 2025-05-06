@@ -33,6 +33,22 @@ p {
   color: #2c001e;
 }
 
+.social-links {
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  margin: 0 1rem;
+  color: #2c001e;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e95420;
+  /* Ubuntu orange */
+}
+
 footer {
   margin-top: 2rem;
   font-size: 0.9rem;
