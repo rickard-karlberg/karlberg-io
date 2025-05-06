@@ -54,3 +54,16 @@ footer {
   font-size: 0.9rem;
   color: #555;
 }
+
+a {
+  color: #e95420;
+  /* Ubuntu orange */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #b7410e;
+  /* Darker orange on hover */
+  text-decoration: underline;
+}
