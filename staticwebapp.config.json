@@ -1,9 +1,9 @@
 {
   "routes": [
     {
-      "route": "/*",
+      "route": "/notfound",
       "rewrite": "/404.html",
-      "statusCode": 404
+      "statusCode": 200
     }
   ]
 }
