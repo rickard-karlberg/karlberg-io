@@ -89,7 +89,6 @@ a:hover {
   background-color: #eeeeee;
   color: #1e1e1e;
   font-family: 'Ubuntu Mono', monospace;
-  padding: 1rem 1.5rem;
   border-radius: 4px;
   text-align: left;
   font-size: 0.95rem;
@@ -97,16 +96,16 @@ a:hover {
   box-shadow: 3px 3px 0 #333;
   display: block;
   width: 100%;
-  max-width: 340px;
   /* ✅ fixed maximum width */
   min-height: 340px;
   /* ✅ ensure height doesn't collapse */
   margin: 0 auto;
+  tab-size: 4;
 }
 
 .terminal-output {
   margin-top: -2rem;
-  padding: 0;
+  padding: 1rem;
   line-height: 1.2;
   white-space: pre-wrap;
   /* already used – keeps formatting */
