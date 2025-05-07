@@ -120,6 +120,24 @@ a:hover {
   font-size: 0.95rem;
 }
 
+.execute-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+.execute-button:hover {
+  background-color: var(--accent-hover);
+}
+
 
 #typed-output::after {
   content: '|';
