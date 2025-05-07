@@ -1,9 +1,1 @@
-{
-  "routes": [
-    {
-      "route": "/notfound",
-      "rewrite": "/404.html",
-      "statusCode": 200
-    }
-  ]
-}
+{}
