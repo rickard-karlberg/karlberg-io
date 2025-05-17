@@ -22,7 +22,7 @@
       <pre id="typed-output" class="terminal-output"></pre>
     </div>
     <button class="execute-button"
-      onclick="window.open('https://www.programiz.com/online-compiler/1LhZ6wLk4S6hH', '_blank')">
+      onclick="clearTerminal(); document.getElementById('typed-output').textContent = codeOutput">
       ▶ Run
     </button>
 
@@ -74,16 +74,40 @@
     `			print(i)\n` +
     `devops(15)`;
 
+  const codeOutput =
+    `1\n` +
+    `2\n` +
+    `Dev\n` +
+    `4\n` +
+    `Ops\n` +
+    `Dev\n` +
+    `7\n` +
+    `8\n` +
+    `Dev\n` +
+    `Ops\n` +
+    `11\n` +
+    `Dev\n` +
+    `13\n` +
+    `14\n` +
+    `DevOps`;
 
   const outputEl = document.getElementById('typed-output');
   let i = 0;
+  let isTyping = true;
 
   function typeChar() {
-    if (i < codeSnippet.length) {
+    if (i < codeSnippet.length && isTyping) {
       outputEl.textContent += codeSnippet.charAt(i);
       i++;
       setTimeout(typeChar, 125); // adjust speed here
     }
+  }
+
+  function clearTerminal() {
+    isTyping = false;
+    console.clear();
+    outputEl.textContent = '';
+    outputEl.classList.add('no-cursor'); // Remove blinking cursor
   }
 
   document.addEventListener('DOMContentLoaded', typeChar);

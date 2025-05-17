@@ -96,7 +96,7 @@ a:hover {
   display: block;
   width: 100%;
   /* ✅ fixed maximum width */
-  height: 14.54rem;
+  height: 18.75rem;
   line-height: 1.2;
   /* ✅ ensure height doesn't collapse */
   margin: 0 auto;
@@ -142,6 +142,11 @@ a:hover {
 #typed-output::after {
   content: '|';
   animation: blink 1s infinite;
+}
+
+.no-cursor::after {
+  content: none;
+  animation: none;
 }
 
 @keyframes blink {
